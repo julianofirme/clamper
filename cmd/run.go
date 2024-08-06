@@ -20,7 +20,7 @@ var (
 )
 
 var runCmd = &cobra.Command{
-	Use:   "run [flags] [command]",
+	Use:   "[flags] run [command]",
 	Short: "Run a command with limited resources defined in the given flags",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {

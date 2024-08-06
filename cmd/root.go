@@ -8,9 +8,8 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use: "clamper",
-	Short: `clamper is a tool limit the resources used by your process, to test the
-						performance of your application in different environments`,
+	Use:   "clamper",
+	Short: `clamper is a tool limit the resources used by your process, to test the performance of your application in different environments`,
 }
 
 func Execute() {
