@@ -6,8 +6,8 @@ run:
 
 compile:
 	echo "Compiling for every OS and Platform"
-	GOOS=linux GOARCH=arm go build -o bin/cpu-clamp-linux-arm main.go
-	GOOS=linux GOARCH=arm64 go build -o bin/cpu-clamp-linux-arm64 main.go
-	GOOS=freebsd GOARCH=386 go build -o bin/cpu-clamp-freebsd-386 main.go
+	GOOS=windows GOARCH=amd64 go build -o bin/clamp-windows.exe 
+	GOOS=darwin GOARCH=amd64 go build -o bin/clamp-darwin 
+	GOOS=linux GOARCH=amd64 go build -o bin/clamp 
 
 all: hello build
