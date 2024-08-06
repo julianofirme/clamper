@@ -23,17 +23,17 @@ Once Clamper is installed, you can run commands with resource limits using the r
 ## Running a Command with Resource Limits
 
 ```bash
-clamper [flags] run [command]
+clamper run [flags] [command]
 ```
 
 ## Flags
-- `--cores`: Number of CPU cores
-- `--clock`: CPU clock speed in MHz 
-- `--ram`: RAM in MB
+- `--cores`: Number of CPU cores (default: 1 core)
+- `--clock`: CPU clock speed in MHz (default: 1000 Mhz)
+- `--ram`: RAM in MB (default: 512 MB)
 
 ## Example
 ```bash
-clamper --cores 2 --clock 70 --ram 200 run your_app_command
+clamper run --cores 2 --clock 70 --ram 200 your_app_command
 ```
 
 ## Contributing
